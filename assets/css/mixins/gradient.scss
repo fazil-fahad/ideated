@@ -1,0 +1,17 @@
+@mixin gradientFromTop($topColor, $bottomColor) {
+  background-color:$topColor;/* fallback color*/
+  filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=$topColor, endColorstr=$toColor);
+  background-image:-webkit-linear-gradient(top, $topColor 0%, $bottomColor 100%);
+  background-image:linear-gradient(top, $topColor 0%, $bottomColor 100%);
+  background-image:-o-linear-gradient(top, $topColor 0%, $bottomColor 100%);
+  background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,$topColor), color-stop(100%,$bottomColor));
+}
+
+@mixin gradientFromLeft($leftColor, $rightColor){
+  background-color:$leftColor;
+  filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=$leftColor, endColorstr=$rightColor);
+  background-image:-webkit-linear-gradient(left, $leftColor 0%, $rightColor 100%);
+  background-image:linear-gradient(left, $leftColor 0%, $rightColor 100%);
+  background-image:-o-linear-gradient(left, $leftColor 0%, $rightColor 100%);
+  background-image:-webkit-gradient(linear, left bottom, right bottom, color-stop(0%,$leftColor), color-stop(100%,$rightColor));
+}

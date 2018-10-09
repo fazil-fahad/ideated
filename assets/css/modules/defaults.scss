@@ -1,0 +1,246 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: $base-font-weight;
+    font-family: $lato;
+}
+
+a {
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+    letter-spacing: .04em;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    letter-spacing: .04em;
+}
+
+.btn {
+    border-radius: 3px;
+    font-weight: $btn-font-weight;
+}
+
+a:hover,
+a:active,
+a:focus,
+a:active:focus,
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn:active:focus {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: $font-size-h3;
+    font-family: $lato;
+    color: $heading-black;
+    font-weight: $base-font-weight;
+}
+
+.no-padding {
+    @include padding-all(0);
+}
+
+.no-padding-left {
+    @include padding-left(0);
+}
+
+.no-padding-right {
+    @include padding-right(0);
+}
+
+.no-padding-top {
+    @include padding-top(0);
+}
+
+.no-padding-bottom {
+    @include padding-bottom(0);
+}
+
+.no-margin {
+    @include margin-all(0);
+}
+
+.no-margin-left {
+    @include margin-left(0);
+}
+
+.no-margin-right {
+    @include margin-right(0);
+}
+
+.no-margin-top {
+    @include margin-top(0);
+}
+
+.no-margin-bottom {
+    @include margin-bottom(0);
+}
+
+.no-border-radius {
+    @include add-border-radius(0, "all");
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.section-control {
+    display: table;
+    @extend .full-width;
+}
+
+$slow-transition: all 0.5s ease;
+$fast-transition: all 0.3s ease;
+.transition {
+    @include transition($fast-transition);
+}
+
+$box-shadow-normal: 0 30px 38px rgba(0, 0, 0, .15);
+$box-shadow-light: 0 30px 38px rgba(0, 0, 0, .15);
+$box-shadow-dark: 0 30px 38px rgba(0, 0, 0, .15);
+.box-shadow {
+    @include box-shadow($box-shadow-normal);
+}
+
+.style-type li {
+    list-style-type: none;
+}
+
+.transformX {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.transformY {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.transform-center {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.cover {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+$btn-default-bg: #31b744;
+$btn-primary-bg: #216da1;
+$btn-info-bg: #24a5e1;
+.btn-common {
+    @extend .transition;
+    @include border-radius($border-radius-base);
+    text-decoration: none;
+    font-weight: $btn-font-weight;
+    font-size: $btn-font-size;
+    padding: 10px 30px;
+}
+
+.btn-default {
+    @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+
+.btn-primary {
+    @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+
+.btn-success {
+    @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+}
+
+.btn-info {
+    @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+}
+
+.section-control {
+    display: table;
+    width: 100%;
+}
+
+.cover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0
+}
+
+.vertical-center {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.horizontal-center {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.center-center {
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+}
+
+.flex-control {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+html,
+body {
+    font-size: 16px;
+}

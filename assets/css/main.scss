@@ -1,0 +1,39 @@
+$grid-columns:              12;
+
+//----------------------------------*\
+// SCSS bootstrap
+//----------------------------------*/
+@import "bootstrap";
+
+//----------------------------------*\
+// SCSS MIXINS
+//----------------------------------*/
+
+@import 'mixins/breakpoints.scss';
+@import 'mixins/gradient.scss';
+@import 'mixins/padding-margin';
+@import 'mixins/border-radius';
+@import 'mixins/add-border';
+@import 'mixins/color';
+
+//----------------------------------*\
+// SCSS MODULES
+//----------------------------------*/
+
+@import 'modules/typography.scss';
+@import 'modules/misc.scss';
+@import 'modules/defaults.scss';
+
+//----------------------------------*\
+// SCSS PARTIALS
+//----------------------------------*/
+
+@import 'partials/header.scss';
+@import 'partials/home.scss';
+@import 'partials/about.scss';
+@import 'partials/footer.scss';
+@import 'partials/media-query.scss';
+
+body {
+  font-size: 16px;
+}

@@ -1,0 +1,29 @@
+$theme-color: #26aae1;
+$secondary-theme-color: #1abc9c;
+$pink-color: #cb1daa;
+$white-color: white;
+$grey-color: #81878c;
+$heading-black: #243342;
+$font-black: #2f363f;
+$mud-orange: #c25b17;
+$baby-pink: #f0545d;
+$blue: #2aace1;
+$dark-pink: #f01b6e;
+$leaf-green: #23b21b;
+$light-green: #1abc9c;
+
+@mixin bgColor($color) {
+  background-color: $color;
+}
+@mixin base-font-color($color) {
+  color: $color;
+}
+@mixin heading-font-color($color) {
+  background-color: $color;
+}
+@mixin lead-font-color($color) {
+  background-color: $color;
+}
+@mixin small-font-color($color) {
+  background-color: $color;
+}

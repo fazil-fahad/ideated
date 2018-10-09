@@ -1,0 +1,289 @@
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+@media (max-width: 1199px) {
+    html {
+        font-size: 100%;
+    }
+    .no-padding-md {
+        padding: 0;
+    }
+    .no-padding-top-md {
+        padding-top: 0;
+    }
+    .no-padding-bottom-md {
+        padding-bottom: 0;
+    }
+    .no-padding-left-md {
+        padding-left: 0;
+    }
+    .no-padding-right-md {
+        padding-right: 0;
+    }
+    .no-margin-md {
+        margin: 0;
+    }
+    .no-margin-top-md {
+        margin-top: 0;
+    }
+    .no-margin-bottom-md {
+        margin-bottom: 0;
+    }
+    .no-margin-left-md {
+        margin-left: 0;
+    }
+    .no-margin-right-md {
+        margin-right: 0;
+    }
+    .custom-padding {
+        padding: 0 15px;
+    }
+    .step-four h3 {
+        min-height: 70px;
+    }
+    .step-two::before {
+        width: 320px;
+        left: -100%;
+        background-position: -100px 0px;
+    }
+    .step2-4info {
+        left: -90%;
+    }
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 95%;
+    }
+    .step-four {
+        position: relative;
+        top: 0;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        margin-top: 4rem;
+    }
+    .step-two,
+    .step-three {
+        clear: none;
+    }
+    .step-one {
+        margin-top: 4rem;
+    }
+    .step-four h3 {
+        min-height: 0;
+    }
+    .step-one::before,
+    .step-three::before,
+    .step-one::after,
+    .step-three::after,
+    .step-two::before {
+        background-image: none;
+        width: 0;
+        height: 0;
+        left: 0;
+        right: 0;
+    }
+    .steps-info {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 90%;
+    }
+    .navbar-brand {
+        margin: 8px 0 4px 0;
+    }
+    .stylish-navbar {
+        min-height: 35px;
+        padding: 6px 0;
+    }
+    .navbar-brand {
+        margin: 12px 0 4px 0;
+    }
+    .navbar-default .navbar-toggle,
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        border-color: transparent;
+        background-color: transparent;
+    }
+    .navbar-collapse {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #1ebd9d;
+    }
+    .navbar-nav {
+        max-width: 140px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .navbar-toggle {
+        padding: 15px 0;
+        width: 24px;
+    }
+    #navbar .navbar-nav > li:first-child {
+        margin-top: 20px;
+    }
+    #navbar .navbar-nav > li:last-child {
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    #navbar .navbar-nav > li {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .vertical-center {
+        top: 0;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    main {
+        margin-top: 58px;
+    }
+    .banner-section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+    .banner-img {
+        margin-top: 30px;
+    }
+    .step-two {
+        margin-top: 4rem;
+    }
+    .work-flow h2 {
+        max-width: 100%;
+        text-align: center;
+    }
+    .feature-project .section-title {
+        max-width: 330px;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .feature-project h2 {
+        width: 100%;
+        float: none;
+    }
+    .navbar-default .navbar-nav > li > a {
+        font-size: 20px;
+    }
+    .navbar-default .navbar-nav > li.btn-link a {
+        font-size: 20px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 580px) {
+    html {
+        font-size: 80%;
+        .highlight {
+            font-size: 240%;
+        }
+    }
+    .full-width-sm {
+        width: 100%;
+    }
+    footer .list-inline > li {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .btn-control {
+        float: none;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .input-control {
+        max-width: 290px;
+        float: none;
+    }
+}

@@ -1,0 +1,379 @@
+/*main*/
+
+html {
+    @include bp-xs {
+        font-size: 90%;
+    }
+    @include bp-xxs {
+        font-size: 20%;
+    }
+    main {
+        margin-top: 67px;
+    }
+    /*banner-section*/
+    .banner-section {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+    .banner-info {
+        position: relative;
+        padding-right: 75px;
+        .btn-lg {
+            color: white;
+            &:focus,
+            &:hover {
+                color: white;
+            }
+        }
+        @include bp-xs {
+            padding-right: 0;
+        }
+    }
+    .banner-info h2 {
+        color: $heading-black;
+        font-size: $font-size-h2;
+        letter-spacing: -0.02em;
+        line-height: 1.06;
+        font-weight: $headings-font-weight;
+    }
+    .banner-img {
+        max-width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .lead {
+        font-size: $font-size-lead;
+        color: $grey-color;
+        letter-spacing: 0.02em;
+        line-height: 1.38;
+        margin-bottom: 30px;
+        margin-top: 12px;
+        font-weight: $base-font-weight;
+    }
+    /*feature-project*/
+    .single-project {
+        margin-top: 3rem;
+        max-width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .feature-project .section-title {
+        width: 100%;
+        display: table;
+    }
+    .single-project span {
+        color: $secondary-theme-color;
+    }
+    .single-project small {
+        color: $grey-color;
+    }
+    .feature-project {
+        background-color: #f3f3f3;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .feature-project .btn {
+        font-family: $lato;
+        font-weight: $headings-font-weight;
+    }
+    .btn-lg {
+        font-size: 18px;
+        padding: 15px 40px;
+    }
+    .bar-height {
+        height: 4px;
+    }
+    .progress {
+        height: 4px;
+        background-color: #e1e1e1;
+        border-radius: 2px;
+        margin-bottom: 6px;
+        margin-top: 2rem;
+    }
+    .custom-padding {
+        padding: 0 25px;
+    }
+    .feature-project figcaption {
+        background-color: white;
+        border-radius: 0 0 3px 3px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+        padding: 20px 25px;
+    }
+    .progress-bar-success {
+        background-color: $secondary-theme-color;
+        border-radius: 2px;
+    }
+    .feature-project {
+        .custom-padding {
+            h4 {
+                font-size: $font-size-h4;
+                color: $grey-color;
+                float: left;
+                font-weight: $headings-font-weight;
+                width: 100%;
+            }
+        }
+    }
+    .feature-project .btn-info {
+        margin-top: 3rem;
+    }
+    .project-team img {
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        background-color: white;
+        border: 2px solid white;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.09);
+        position: relative;
+    }
+    .project-team a {
+        margin-left: -15px;
+        float: left;
+    }
+    .project-team a:first-child {
+        margin-left: 0;
+    }
+    .single-project > a {
+        display: block;
+    }
+    .single-project > a:hover {
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.13);
+    }
+    .project-team a:nth-child(1) > img {
+        margin-left: 0;
+        z-index: 8;
+    }
+    .project-team a:nth-child(2) > img {
+        z-index: 7;
+    }
+    .project-team a:nth-child(3) > img {
+        z-index: 6;
+    }
+    .project-team a:nth-child(4) > img {
+        z-index: 5;
+    }
+    .project-team a:nth-child(4) > img {
+        z-index: 4;
+    }
+    .project-team a:nth-child(5) > img {
+        z-index: 3;
+    }
+    .project-team {
+        margin-top: 15px;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        position: relative;
+        display: table;
+        width: 100%;
+    }
+    .project-team a > img {
+        -webkit-transition: all 0.25s ease-in-out 0s;
+        transition: all 0.25s ease-in-out 0s;
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+    }
+    .project-team a:hover img {
+        z-index: 9;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    .single-project h4 {
+        color: $font-black;
+        font-size: $font-size-h4;
+        font-weight: $base-font-weight;
+    }
+    .tooltip.fade.bottom.in {
+        /* top: 40px !important;*/
+        -webkit-transition-delay: .3s;
+        transition-delay: .3s;
+    }
+    /*work-flow*/
+    .work-flow {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+    .work-flow h2 {
+        /* max-width: 220px;*/
+    }
+    .highlight {
+        font-size: $font-highlight;
+        max-width: 220px;
+        color: $heading-black;
+        font-family: $lato;
+        font-weight: 300;
+        line-height: .8;
+        text-align: left;
+        letter-spacing: -0.04em;
+        @include bp-sm {
+            max-width: 100%;
+        }
+    }
+    .work-flow h3 {
+        color: $font-black;
+        margin-top: 30px;
+        font-size: $font-size-h3;
+        font-family: $lato;
+        font-weight: $base-font-weight;
+        letter-spacing: -.02em;
+    }
+    .work-flow h4 {
+        font-size: $font-size-h4;
+        margin-top: 10px;
+        color: $grey-color;
+        font-weight: $base-font-weight;
+    }
+    .steps-container {
+        position: relative;
+    }
+    .step-four {
+        position: absolute;
+        top: 49.3%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        @include bp-sm {
+            position: relative;
+            top: 0;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            margin-top: 4rem;
+        }
+    }
+    .step-four figure,
+    .step-three figure,
+    .step-two figure,
+    .step-one figure {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .step-four figure {
+        max-width: 182px;
+    }
+    .step-three figure {
+        max-width: 177px;
+    }
+    .step-two figure {
+        max-width: 200px;
+    }
+    .step-one figure {
+        max-width: 119px;
+    }
+    .step-two,
+    .step-three {
+        margin-top: 4rem;
+        clear: both;
+        @include bp-sm {
+            clear: none;
+        }
+    }
+    .step-one::before,
+    .step-three::before,
+    .step-one::after,
+    .step-three::after,
+    .step-two::before {
+        position: absolute;
+        content: '';
+    }
+    .step-one::before {
+        background-image: url('../images/arrow-step4.png');
+        width: 128px;
+        height: 122px;
+        left: -40%;
+        top: 46%;
+        @include bp-sm {
+            background-image: none;
+            width: 0;
+            height: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+    .step-one::after {
+        background-image: url('../images/arrow-step1.png');
+        width: 117px;
+        height: 126px;
+        right: -40%;
+        top: 49%;
+        @include bp-sm {
+            background-image: none;
+            width: 0;
+            height: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+    .step-three::before {
+        background-image: url('../images/arrow-step3.png');
+        width: 117px;
+        height: 125px;
+        left: -40%;
+        top: -6%;
+        @include bp-sm {
+            background-image: none;
+            width: 0;
+            height: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+    .step-three::after {
+        background-image: url('../images/arrow-step2.png');
+        width: 124px;
+        height: 122px;
+        right: -40%;
+        top: 0;
+        @include bp-sm {
+            background-image: none;
+            width: 0;
+            height: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+    .step-two::before {
+        background-image: url('../images/arrow-step2-4.png');
+        width: 415px;
+        height: 13px;
+        left: -100%;
+        top: 29%;
+        background-repeat: no-repeat;
+        @include bp-sm {
+            background-image: none;
+            width: 0;
+            height: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+    .steps-info {
+        color: #535b62;
+        font-size: 14px;
+        padding: 6px 15px;
+        border: 1px solid #a4aab0;
+        border-radius: 3px;
+        position: absolute;
+        background-color: white;
+        z-index: 1;
+        display: block;
+        letter-spacing: .02em;
+        @include bp-sm {
+            display: none;
+        }
+    }
+    .step4-info {
+        left: -63%;
+        top: 61.7%;
+    }
+    .step1-info {
+        top: 62.5%;
+        right: -50%;
+    }
+    .step2-4info {
+        top: 25%;
+        left: -79%;
+    }
+    .btn-sm {
+        font-size: $font-size-base;
+        padding: 10px 25px;
+        margin-top: 25px;
+    }
+}

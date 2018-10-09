@@ -1,0 +1,53 @@
+/*subscribe*/
+
+.subscribe {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: $theme-color;
+    overflow: hidden;
+	.btn-sm {
+		color: white;
+		margin-bottom: 13px;
+		&:focus, &:hover {
+			color: white;
+		}
+	}
+}
+
+.subscribe h3 {
+    line-height: 1.1;
+    color: white;
+    font-weight: $headings-font-weight;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscribe small {
+    display: block;
+    font-size: 13px;
+    color: white;
+}
+
+/*footer*/
+
+footer ul {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+footer .list-inline > li {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+footer a {
+    color: $grey-color;
+    font-size: $font-size-base;
+    font-family: $lato;
+    font-weight: $base-font-weight;
+}
+
+footer a:hover {
+    color: $theme-color;
+}
